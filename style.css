@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #000;
+}
+
+body.no-scroll{
+    overflow: hidden;
+}
+.logo {
+    color:#fff;
+}
+
+.header {
+    min-height: 10vh;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#fff;
+    width: 80%;
+    margin:0 auto;
+    padding: 2rem 0;
+    z-index: 2;
+    position: relative;
+}
+
+.menu{
+    cursor: pointer;
+}
+
+.line1, .line2{
+    width: 3rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: #fff;
+    pointer-events: none;
+}
+
+.navbar {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    opacity: 1;
+    clip-path: circle(50px at 100% -20%);
+}
+
+.navbar .navbar-list{
+    font-size: 3rem;
+    padding-top:3rem;
+    flex-basis: 30rem;
+    list-style: none;
+}
+
+.navbar-list h3{
+    padding-bottom: 3rem;
+}
+
+.navbar-info{
+    flex-basis: 30rem;
+}
+
+.navbar-info h2{
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+
+.navbar-info p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.slide{
+    min-height: 100vh;
+    margin:0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+
+.slide-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    flex-basis: 25rem;
+    padding-right: 5rem;
+    position: relative;
+}
+
+.slide-desc ul{
+    list-style: inside;
+    padding: 3rem 0;
+}
+
+.slide-desc li{
+    font-size: 1.5rem;
+    color:white;
+    margin-bottom: 1rem;
+}
+
+.slide-title {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-title::after{
+    content:'';
+    display: block;
+    margin-top:0.5rem;
+    width: 40px;
+    height: 4px;
+}
+
+.slide-title h2{
+    font-size: 3rem;
+}
+
+.slide-img{
+    position: relative;
+    flex: 1;
+    flex-basis: 25rem;
+    overflow: hidden;
+}
+
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.slide.javascript h2{
+    background: -webkit-linear-gradient(89.99deg, #F85900 -39.12%, #F9D423 99.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide.javascript .slide-title::after{
+    background: linear-gradient(89.99deg, #F85900 -39.12%, #F9D423 99.99%);
+}
+
+.slide.raisbuva h2{
+    background: -webkit-linear-gradient(90deg, #16D9E3 0%, #30C7EC 47%, #46AEF7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide.raisbuva .slide-title::after{
+    background: linear-gradient(90deg, #16D9E3 0%, #30C7EC 47%, #46AEF7 100%);
+
+}
+
+.slide.html h2{
+    background: -webkit-linear-gradient(90deg, #e34e24,  #e34e24);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide.html .slide-title::after{
+    background: linear-gradient(90deg, #e34e24,  #e34e24);
+
+}
+
+.slide.css h2{
+    background: -webkit-linear-gradient(90deg, #1c46e9, #1c46e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide.css .slide-title::after{
+    background: linear-gradient(90deg, #1c46e9, #1c46e9);
+
+}
+
+.slide.git h2{
+    background: -webkit-linear-gradient(90deg, #DC2D61 0%, #DF1444 52%, #FF3535 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide.git .slide-title::after{
+    background: linear-gradient(90deg, #DC2D61 0%, #DF1444 52%, #FF3535 100%);
+}
+
+.slide.vuejs h2{
+    background: -webkit-linear-gradient(90deg, #41b883, #41b883);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide.vuejs .slide-title::after{
+    background: linear-gradient(90deg, #41b883, #41b883);
+}
+
+.slide.php h2{
+    background: -webkit-linear-gradient(90deg, #8893be, #8893be);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide.php .slide-title::after{
+    background: linear-gradient(90deg, #8893be, #8893be);
+}
+
+.slide.mysql h2{
+    background: -webkit-linear-gradient(90deg, #00aad0, #00aad0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide.mysql .slide-title::after{
+    background: linear-gradient(90deg, #00aad0, #00aad0);
+}
+
+.slide.oop h2{
+    background: -webkit-linear-gradient(90deg, #f9f7f4, lightgrey);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide.oop .slide-title::after{
+    background: linear-gradient(90deg, #f9f7f4, lightgrey);
+}
+
+.slide.laravel h2{
+    background: -webkit-linear-gradient(90deg, #fb503b, #fb503b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide.laravel .slide-title::after{
+    background: linear-gradient(90deg, #fb503b, #fb503b);
+}
+
+.slide-text-reveal, .slide-img-reveal{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    background: #000;
+}
+
+/*.active{*/
+/*    border:2px solid white;*/
+/*}*/
